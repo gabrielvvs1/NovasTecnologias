@@ -1,33 +1,28 @@
 import random
 
+opcoes = ["Pedra", "Papel", "Tesoura"]
 
-itens = ["Pedra, Papel, Tesoura"]
-
-def menu():
-    print("Menu de Escolha::")
-    print("0. Sair")
-    print("1. Pedra")
-    print("2. Papel")
-    print("3. Tesoura")
+while True:
+    jogador = input("\nEscolha Pedra, Papel ou Tesoura (ou 'sair' para encerrar): ").capitalize()
     
-def escolher_opcao():
-    opcoes = {1: "Pedra", 2: "Papel", 3:"Tesoura"}
+    if jogador == "Sair":
+        print("Até a próxima.")
+        break
     
-def jogar():
-    jogador =  opcoes = {1: "Pedra", 2: "Papel", 3:"Tesoura"}
-
-    while True:
-    menu():
-    jogador = escolher_opcao()
-
-    maquina = random.randint(1,3)
-
-    print(f"voce ecolheu:(opcoes{jogador})")
-    print(f"a maquina escolheu:(opcoes{maquina})\n")
+    if jogador not in opcoes:
+        print("Escolha inválida!")
+        continue
+    
+    maquina = random.choice(opcoes)
+    
+    print(f"Voce escolheu: {jogador}")
+    print(f"A maquina escolheu: {maquina}")
 
     if jogador == maquina:
-        print("Empate")
-    elif (jogador == 1 and maquina == 3) or (jogador == 2 and maquina == 1) or (jogador == 3 and maquina == 2):
-        print("voce ganhou")
+        print("Empate!")
+    elif (jogador == "Pedra" and maquina == "Tesoura") or \
+         (jogador == "Papel" and maquina == "Pedra") or \
+         (jogador == "Tesoura" and maquina == "Papel"):
+        print("Você venceu!")
     else:
-        print("A maquina ganhou")
+        print("A maquina ganhou :(")
