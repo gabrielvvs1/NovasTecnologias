@@ -1,8 +1,8 @@
 class Produto:
-    def __init__ (self, nome, preço, quantidade_estoque):
+    def __init__(self, nome, preco, estoque):
         self.nome = nome
-        self.preço = preço
-        self. quantidade_estoque = quantidade_estoque
+        self.preco = preco
+        self.estoque = estoque
 
-    def comprar_produto(self):
-        self.comprado = True
+    def aplicar_desconto(self, percentual):
+        return self.preco * (1 - percentual / 100)
