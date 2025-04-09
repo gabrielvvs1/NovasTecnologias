@@ -8,8 +8,8 @@ class Loja:
             Produto("Produto A", 50.0, 10),
             Produto("Produto B", 100.0, 5),
             Produto("Produto C", 150.0, 0),
-            Produto("Produto D", 75.0, 8),     # Novo produto
-            Produto("Produto E", 30.0, 20)     # Novo produto
+            Produto("Produto D", 75.0, 8),     
+            Produto("Produto E", 30.0, 20)    
         ]
 
     def mostrar_produtos(self):
