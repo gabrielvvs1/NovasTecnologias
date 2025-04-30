@@ -10,3 +10,6 @@
 
 
    py .\manage.py startapp app1
+
+   
+   npx @tailwindcss/cli -i ./static/src/styles.css -o ./static/css/styles.css  -- para rodar o projeto
