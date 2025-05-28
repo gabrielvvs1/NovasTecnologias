@@ -6,16 +6,20 @@ django-admin startproject 'nome do projeto'
 cd 'entrar na pasta do projeto'
 py manage.py runserver (para rodar o projeto)  -- cria a url para acessar
 
+Abrir um novo terminal ao lado
 cd ..  - (para voltar uma pasta)
 .venv\Scripts\activate (para ativar o ambiente virtual novamente)
 py manage.py migrate (para fazer a migrações e ligar os 2 modulos)
 
- py manage.py createsuperuser (para criar o superusuario)
+py manage.py createsuperuser (para criar o superusuario)
 de enter e coloque somente a senha = meu nome
 para entrar é  http://127.0.0.1:8000/admin
-username: inicio do email insnti
+username: inicio do email insti
 
-py manage.py startapp todo_list (ou nome preferencial) (para criar o app)
+py manage.py startapp todo_list (ou nome de sua preferencia para criar o app)
 ir em setting no todoApp e colocar em INSTALLED_APPS = 'todo_list'
 
 dentro do todo_list criar a pasta urls.py e copiar o que esta na pasta em todoApp e colar na pasta que criou urls.py em todo_list
+
+banco de dados:
+ py manage.py makeimigratios (para criar o banco de dados
