@@ -22,4 +22,4 @@ ir em setting no todoApp e colocar em INSTALLED_APPS = 'todo_list'
 dentro do todo_list criar a pasta urls.py e copiar o que esta na pasta em todoApp e colar na pasta que criou urls.py em todo_list
 
 banco de dados:
- py manage.py makeimigratios (para criar o banco de dados
+python manage.py makemigrations (para criar o banco de dados)
